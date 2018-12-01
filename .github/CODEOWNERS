@@ -117,6 +117,12 @@
 /nixos/modules/services/databases/postgresql.nix @thoughtpolice
 /nixos/tests/postgresql.nix @thoughtpolice
 
+# Network Time Daemons
+/pkgs/tools/networking/chrony @thoughtpolice
+/pkgs/tools/networking/ntp @thoughtpolice
+/pkgs/tools/networking/openntpd @thoughtpolice
+/nixos/modules/services/networking/ntp @thoughtpolice
+
 # Dhall
 /pkgs/development/dhall-modules      @Gabriel439 @Profpatsch
 /pkgs/development/interpreters/dhall @Gabriel439 @Profpatsch
