@@ -5,7 +5,6 @@ assert stdenv.isLinux -> libcap != null;
 
 stdenv.mkDerivation rec {
   name = "chrony-${version}";
-
   version = "3.4";
 
   src = fetchurl {
@@ -32,7 +31,7 @@ stdenv.mkDerivation rec {
     repositories.git = git://git.tuxfamily.org/gitroot/chrony/chrony.git;
     license = licenses.gpl2;
     platforms = with platforms; linux ++ freebsd ++ openbsd;
-    maintainers = with maintainers; [ rickynils fpletz ];
+    maintainers = with maintainers; [ rickynils fpletz thoughtpolice ];
 
     longDescription = ''
       Chronyd is a daemon which runs in background on the system. It obtains
