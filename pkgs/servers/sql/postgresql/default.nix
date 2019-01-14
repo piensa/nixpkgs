@@ -173,7 +173,7 @@ in {
   };
 
   postgresql11 = common {
-    version    = "11beta2";
+    version    = "11.1";
     psqlSchema = "11.0";
     sha256     = "0qxlfh1a7bhhamrbs3msk71pny7jxx0c0fs26zlmp7jjn138zqii";
   };
