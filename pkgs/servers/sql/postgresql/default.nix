@@ -175,6 +175,6 @@ in {
   postgresql11 = common {
     version    = "11.1";
     psqlSchema = "11.0";
-    sha256     = "0qxlfh1a7bhhamrbs3msk71pny7jxx0c0fs26zlmp7jjn138zqii";
+    sha256     = "90815e812874831e9a4bf6e1136bf73bc2c5a0464ef142e2dfea40cda206db08";
   };
 }
