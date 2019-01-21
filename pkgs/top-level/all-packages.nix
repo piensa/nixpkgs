@@ -6175,6 +6175,8 @@ in
 
   rcm = callPackage ../tools/misc/rcm {};
 
+  tegola = callPackage ../servers/tegola {};
+
   tftp-hpa = callPackage ../tools/networking/tftp-hpa {};
 
   tigervnc = callPackage ../tools/admin/tigervnc {
