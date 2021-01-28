@@ -218,6 +218,14 @@ buildPythonPackage rec {
     # Broken with KeyError: visibility_timeout in "section_dict"
     "test_broker_transport_options"
 
+    # Broken with PermissionError: Operation not permitted (originated from sysctl(KERN_PROCARGS2))
+    "test_bash_operator_kill"
+
+    # Broken with FileNotFoundError: [Errno 2] No such file or directory: 'pgrep': 'pgrep'
+    "test_cli_webserver_foreground"
+    "test_cli_webserver_foreground_with_pid"
+    "test_cli_webserver_shutdown_when_gunicorn_master_is_killed"
+
     # Disabling tests > 20 seconds
     # not worth disabling test_cli_* or test_should_be* b/c it seems those do some slow setup, then remaining tests are fast
     "test_param_setup"
